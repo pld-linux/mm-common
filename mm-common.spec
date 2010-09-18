@@ -6,7 +6,7 @@ Summary(pl.UTF-8):	Wspólne pliki do budowy bibliotek wiązań do C++
 Name:		mm-common
 Version:	0.9.2
 Release:	1
-License:	GPL v2 and GFDL
+License:	GPL v2+
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/mm-common/0.9/%{name}-%{version}.tar.bz2
 # Source0-md5:	8cdc5620bd864d1a17e353398e8ec1ab
@@ -50,7 +50,12 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/mm-common-prepare
 %docdir %{_docdir}/mm-common
 %{_docdir}/mm-common
-%{_aclocaldir}/*.m4
+%{_aclocaldir}/mm-common.m4
+%{_aclocaldir}/mm-dietlib.m4
+%{_aclocaldir}/mm-doc.m4
+%{_aclocaldir}/mm-module.m4
+%{_aclocaldir}/mm-pkg.m4
+%{_aclocaldir}/mm-warnings.m4
 %{_datadir}/mm-common
-%{_mandir}/man1/mm-common-prepare.1*
 %{_npkgconfigdir}/mm-common-libstdc++.pc
+%{_mandir}/man1/mm-common-prepare.1*
