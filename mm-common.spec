@@ -5,7 +5,7 @@ Summary:	Common build files of the C++ binding libraries
 Summary(pl.UTF-8):	Wspólne pliki do budowy bibliotek wiązań do C++
 Name:		mm-common
 Version:	0.9.4
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/mm-common/0.9/%{name}-%{version}.tar.bz2
@@ -58,4 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_aclocaldir}/mm-warnings.m4
 %{_datadir}/mm-common
 %{_npkgconfigdir}/mm-common-libstdc++.pc
+%{_npkgconfigdir}/mm-common-util.pc
 %{_mandir}/man1/mm-common-prepare.1*
