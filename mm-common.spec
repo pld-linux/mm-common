@@ -4,12 +4,12 @@
 Summary:	Common build files of the C++ binding libraries
 Summary(pl.UTF-8):	Wspólne pliki do budowy bibliotek wiązań do C++
 Name:		mm-common
-Version:	0.9.4
-Release:	2
+Version:	0.9.5
+Release:	1
 License:	GPL v2+
 Group:		Development/Tools
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/mm-common/0.9/%{name}-%{version}.tar.bz2
-# Source0-md5:	e3c9f8b8885ec3323f1c7e769db91f3e
+# Source0-md5:	4a4dad67fc8d7e0c529f3a8c6ba4d8b2
 URL:		http://www.gtkmm.org/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
