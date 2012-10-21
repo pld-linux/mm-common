@@ -1,19 +1,19 @@
-#
 %include	/usr/lib/rpm/macros.perl
-#
 Summary:	Common build files of the C++ binding libraries
 Summary(pl.UTF-8):	Wspólne pliki do budowy bibliotek wiązań do C++
 Name:		mm-common
-Version:	0.9.5
+Version:	0.9.6
 Release:	1
 License:	GPL v2+
 Group:		Development/Tools
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/mm-common/0.9/%{name}-%{version}.tar.bz2
-# Source0-md5:	4a4dad67fc8d7e0c529f3a8c6ba4d8b2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/mm-common/0.9/%{name}-%{version}.tar.xz
+# Source0-md5:	3b23749ab39441c392c016ce74632678
 URL:		http://www.gtkmm.org/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	rpm-perlprov
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
