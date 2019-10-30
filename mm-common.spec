@@ -2,13 +2,13 @@
 Summary:	Common build files of the C++ binding libraries
 Summary(pl.UTF-8):	Wspólne pliki do budowy bibliotek wiązań do C++
 Name:		mm-common
-Version:	0.9.12
+Version:	1.0.0
 Release:	1
 License:	GPL v2+
 Group:		Development/Tools
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/mm-common/0.9/%{name}-%{version}.tar.xz
-# Source0-md5:	be1c61587db989c7677375a729b94672
-URL:		http://www.gtkmm.org/
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/mm-common/1.0/%{name}-%{version}.tar.xz
+# Source0-md5:	9087b8612d75cbc1fad0c99e15c2a718
+URL:		https://www.gtkmm.org/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	rpm-perlprov
@@ -47,6 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
+%attr(755,root,root) %{_bindir}/mm-common-get
 %attr(755,root,root) %{_bindir}/mm-common-prepare
 %docdir %{_docdir}/mm-common
 %{_docdir}/mm-common
@@ -61,4 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/mm-common
 %{_npkgconfigdir}/mm-common-libstdc++.pc
 %{_npkgconfigdir}/mm-common-util.pc
+%{_mandir}/man1/mm-common-get.1*
 %{_mandir}/man1/mm-common-prepare.1*
