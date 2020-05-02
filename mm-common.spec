@@ -27,6 +27,8 @@ pomiędzy biblioteki wiązań C++ do GNOME.
 %prep
 %setup -q
 
+%{__sed} -i -e '1s,/usr/bin/env python3$,%{__python3},' util/mm-common-get.in
+
 %build
 %{__aclocal}
 %{__autoconf}
