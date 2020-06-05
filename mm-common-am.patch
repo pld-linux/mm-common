@@ -1,0 +1,10 @@
+--- mm-common-1.0.1/Makefile.am.orig	2020-06-04 19:02:07.241744300 +0200
++++ mm-common-1.0.1/Makefile.am	2020-06-05 06:33:02.759166521 +0200
+@@ -116,7 +116,6 @@
+ 	skeletonmm/untracked/README
+ 
+ skeletonmm_script_files = \
+-  skeletonmm/tools/dist-cmd.py \
+   skeletonmm/tools/generate_defs_and_docs.sh
+ 
+ skeletonmm_files = $(skeletonmm_script_files) $(skeletonmm_data_files)
